@@ -1,0 +1,69 @@
+body {
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #00A99D;
+    --gray: #707070;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+}
+header .navbar-brand {
+    width: 132px;
+}
+header .navbar-brand img {
+    width: 70px;
+}
+header .navbar-light .navbar-toggler {
+    border-color: rgba(255,255,255,.5);
+}
+header .navbar-light .navbar-toggler i {
+    font-size: 1.25em;
+    color: rgba(255,255,255,.5);
+}
+.bg-intro {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/yo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content {
+    padding-top: 4.5em;
+    padding-bottom: 2em;
+}
+.content h1 {
+    padding: 0 0 1em;
+    font-size: 3.75em;
+    color: var(--gray);
+    font-weight: 700;
+}
+footer {
+    background-color: var(--black);
+    padding: 2em 0 3.5em;
+}
+footer .logo-footer {
+    display: flex;
+    justify-content: center;
+}
+footer .logo-footer a {
+    display: block;
+    width: 55px;
+}
+footer .logo-footer a img {
+   width: 150px;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.3em;
+    }
+}
