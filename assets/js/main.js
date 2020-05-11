@@ -11,12 +11,12 @@ $(document).ready( function () {
     $('.navbar-toggler').click( function () {
         $('header').toggleClass('menu-active')
     })
+
+    $('.smooth').click(function(){
+        var target = $(this.hash)
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 500)
+    })
     
 })
-
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
